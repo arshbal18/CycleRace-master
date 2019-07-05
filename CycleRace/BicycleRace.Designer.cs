@@ -75,11 +75,11 @@
             this.gamble.Controls.Add(this.SarahRB);
             this.gamble.Controls.Add(this.LucyRB);
             this.gamble.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gamble.Location = new System.Drawing.Point(11, 478);
+            this.gamble.Location = new System.Drawing.Point(11, 458);
             this.gamble.Margin = new System.Windows.Forms.Padding(2);
             this.gamble.Name = "gamble";
             this.gamble.Padding = new System.Windows.Forms.Padding(2);
-            this.gamble.Size = new System.Drawing.Size(1082, 260);
+            this.gamble.Size = new System.Drawing.Size(1082, 280);
             this.gamble.TabIndex = 0;
             this.gamble.TabStop = false;
             this.gamble.Enter += new System.EventHandler(this.gamble_Enter);
@@ -317,6 +317,7 @@
             this.racetrack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.racetrack.TabIndex = 1;
             this.racetrack.TabStop = false;
+            this.racetrack.Click += new System.EventHandler(this.racetrack_Click);
             // 
             // CycleRace
             // 

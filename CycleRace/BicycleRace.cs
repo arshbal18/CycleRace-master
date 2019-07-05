@@ -41,7 +41,7 @@ namespace RacetrackSimulator
                 cyclerun = racetrack.Width - PBbicycle4.Width,
                 Random = myRandom
             };
-
+            //Racers of the cycle
             ObjPlayers[0] = new Gamblers()
             {
                 Amount = 50,
@@ -66,7 +66,7 @@ namespace RacetrackSimulator
                 BetterRadio = SamRB,
                 PlayerName = "Sam"
             };
-
+            //There are three players who bet on the cycles.
             foreach (Gamblers guy in ObjPlayers)
             {
                 guy.BetPlaced = new Bet();
@@ -159,6 +159,11 @@ namespace RacetrackSimulator
         }
 
         private void SarahLB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void racetrack_Click(object sender, EventArgs e)
         {
 
         }
