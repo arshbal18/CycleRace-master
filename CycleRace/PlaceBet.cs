@@ -6,7 +6,7 @@
         public int Amount;
         public int Cycle;
         
-
+        //thi is the add money section 
         public int Moneyadd(int Firstbicycle)
         {
             if (Cycle == Firstbicycle)

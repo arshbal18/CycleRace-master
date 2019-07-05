@@ -14,6 +14,7 @@ namespace RacetrackSimulator
             InitializeComponent();
 
             objRacers[0] = new race()
+            //this is the background picture
             {
                 MyPictureBox = PBbicycle1,
                 RacerGO = PBbicycle1.Left,
@@ -81,7 +82,7 @@ namespace RacetrackSimulator
             timer1.Start();
             gamble.Enabled = false;
         }
-
+        //These is the buttons of players.
         private void SimerRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             NameLabel.Text = ObjPlayers[0].PlayerName;
@@ -96,7 +97,7 @@ namespace RacetrackSimulator
         {
             NameLabel.Text = ObjPlayers[2].PlayerName;
         }
-
+        //Bet Button for bet on cycle number
         private void Bet_Click(object sender, EventArgs e)
         {
             if (ObjPlayers[0].BetterRadio.Checked)
@@ -131,7 +132,7 @@ namespace RacetrackSimulator
                     var winner = i + 1;
                     timer1.Stop();
                     MessageBox.Show($@"Cycleist number {winner} wins!", @"The Winner is");
-
+                    //messege in the end
                     foreach (Gamblers guy in ObjPlayers)
                     {
                         guy.betmoneywin(winner);

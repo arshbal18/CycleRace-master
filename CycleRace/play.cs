@@ -38,7 +38,7 @@ namespace RacetrackSimulator
             Showlabel();
         }
        
-
+        //Clear button for reset the amount and bet
         public void ClearALL()
         {
             BetPlaced.Amount = 0;
